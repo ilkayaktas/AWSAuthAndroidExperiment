@@ -1,5 +1,6 @@
 package com.ilkayaktas.awsauthexperiment.view;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case SIGNED_OUT:
                         Log.i("userState", "user is signed out");
+                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                        finish();
                         break;
                     case SIGNED_IN:
                         Log.i("userState", "user is signed in");
