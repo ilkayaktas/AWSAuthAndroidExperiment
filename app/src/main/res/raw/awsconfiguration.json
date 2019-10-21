@@ -1,0 +1,23 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "XXXXXXXX",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "XXXXXXXX",
+            "AppClientId": "XXXXXXXX",
+            "AppClientSecret": "XXXXXXXX",
+            "Region": "us-east-1"
+        }
+    }
+}
