@@ -41,7 +41,15 @@ public class SplashScreenActivity extends BaseActivity {
                                 startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
                                 finish();
                                 break;
-                            default:
+                            case GUEST:
+                                break;
+                            case SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+                                AWSMobileClient.getInstance().signOut();
+                                break;
+                            case SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+                                AWSMobileClient.getInstance().signOut();
+                                break;
+                            case UNKNOWN:
                                 AWSMobileClient.getInstance().signOut();
                                 break;
                         }
