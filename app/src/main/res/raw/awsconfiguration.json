@@ -4,14 +4,6 @@
     "IdentityManager": {
         "Default": {}
     },
-    "CredentialsProvider": {
-        "CognitoIdentity": {
-            "Default": {
-                "PoolId": "XXXXXXXXXXX",
-                "Region": "us-east-1"
-            }
-        }
-    },
     "CognitoUserPool": {
         "Default": {
             "PoolId": "XXXXXXXXXXX",
