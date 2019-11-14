@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         addAuthListener();
     }
 
+    /**
+     * User pool can be used from several application.
+     * Token, password, username or account can be changed in time and this method allows us to handle this situation.
+     */
     private void addAuthListener(){
         AWSMobileClient.getInstance().addUserStateListener(new UserStateListener() {
             @Override
